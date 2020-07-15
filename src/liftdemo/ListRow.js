@@ -18,7 +18,7 @@ class ListRow extends React.Component {
                             }}
                         >
                             <Image
-                                source={require('../src/assets/images/arrow_up_copy.png')}
+                                source={require('../../src/assets/images/arrow_up_copy.png')}
                                 style={styles.imageStyle} />
                             <Text>
                                 {floorPosition == 0 ? "Lift Floor G" : "Lift Floor " + `${floorPosition}`}
@@ -32,7 +32,7 @@ class ListRow extends React.Component {
                             }}
                         >
                             <Image
-                                source={require('../src/assets/images/arrow_down_copy.png')}
+                                source={require('../../src/assets/images/arrow_down_copy.png')}
                                 style={styles.imageStyle} />
                             <Text>
                                 {"Lift Floor " + `${floorPosition}`}

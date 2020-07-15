@@ -3,15 +3,15 @@ import { View, SafeAreaView, FlatList, TouchableOpacity, Alert, Text } from 'rea
 import ListRow from './ListRow';
 
 
-class HomeScreen extends Component {
+class LiftScreen extends Component {
 
-    liftDataList = [{ data: { isUpPress: false, isDownPress: false, floorPosition: 6 }, id: 1 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 5 }, id: 2 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 4 }, id: 3 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 3 }, id: 4 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 2 }, id: 5 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 1 }, id: 6 },
-    { data: { isUpPress: false, isDownPress: false, floorPosition: 0 }, id: 7 },
+    liftDataList = [{ data: { isUpPress: false, isDownPress: false, floorPosition: 6 }, id: "1" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 5 }, id: "2" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 4 }, id: "3" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 3 }, id: "4" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 2 }, id: "5" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 1 }, id: "6" },
+    { data: { isUpPress: false, isDownPress: false, floorPosition: 0 }, id: "7" },
     ];
 
     constructor(props) {
@@ -74,5 +74,4 @@ class HomeScreen extends Component {
         );
     }
 }
-
-export default HomeScreen;
+export default LiftScreen;

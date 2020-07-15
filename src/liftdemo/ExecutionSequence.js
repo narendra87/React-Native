@@ -9,15 +9,11 @@ class ExecutionSequence extends Component {
         this.listUpEntries = params.listUpEntries.sort(function (a, b) { return a - b });
         this.listDownEntries = params.listDownEntries.sort(function (a, b) { return b - a });
         this.finalExecutionArray = this.listUpEntries.concat(this.listDownEntries);
-        this.liftArray = []
-        for (var i = 0; i < this.finalExecutionArray.length; i++) {
-            this.liftArray.push(
-                <Text style={{fontSize:18}}>
-                    {(i != this.finalExecutionArray.length - 1) ? `${this.finalExecutionArray[i]}` + "->" : `${this.finalExecutionArray[i]}`}
-
-                </Text>
-            )
-        }
+        this.liftArray = this.finalExecutionArray.map((item,index)=>
+        <Text style={{fontSize:18}}  key={index.toString()}>
+        {(index != this.finalExecutionArray.length - 1) ? `${item}` + "->" : `${item}`}
+        </Text>
+        );
     }
 
     render() {
